@@ -1,0 +1,78 @@
+h1 {
+  font-family: "Risque", cursive;
+  font-size: 69px;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  font-family: "Roboto Slab", serif;
+  color: darkgreen;
+  border-style: solid;
+  border-color: black;
+}
+
+li {
+  float: none;
+}
+
+li a {
+  font-family: "Roboto Slab", cursive;
+  color: darkgreen;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover {
+  color: brown;
+}
+
+.dropdown {
+  display:  none;
+}
+
+#content:hover .dropdown {
+ display: block;
+}
+
+.mainmain {
+  text-align: center;
+  font-size: 30px;
+  color: darkgreen;
+  font-family: "Risque", cursive;
+}
+
+.crocmemes {
+  text-align: center;
+}
+
+.T2main {
+  background-color: white;
+}
+
+footer {
+  text-align: center;
+  border-style: solid;
+  border-color: black;
+  font-size: 20px;
+}
+
+.shopmain {
+  text-align: center;
+}
+
+.find {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Risque", cursive;
+}
+
+.btn {
+
+}

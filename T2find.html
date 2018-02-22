@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+  <meta charset= "utf-8">
+  <link href="T2.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Risque|Roboto+Slab"rel="stylesheet">
+  <meta name="description" content="crocs">
+  <title>
+    Crocs Locator
+  </title>
+</head>
+
+<body>
+  <header>
+    <h1>
+      🐊 Crocs Locator 3000 🐊
+    </h1>
+    <nav>
+      <ul>
+        <li><a href = "T2main.html"> Home </a></li>
+        <li><a href = "T2 about.html"> About </a></li>
+        <li id = "content"><a href = "#"> Find Crocs </a>
+          <a class = "dropdown" href = "T2 shop.html"> Shop </a>
+          <a class = "dropdown" href = "T2 find.html"> Near Me </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="find">
+      🐊 Find the nearest shoe store now! 🐊
+    </h3>
+  <div id="googleMap" style="width:100%;height:400px;"></div>
+   <script>
+   function myMap() {
+     var myCenter = new google.maps.LatLng(40.391551,-104.709798);
+     var greeleyHell = new google.maps.LatLng(39.784061,-104.888835);
+     var utahHell = new google.maps.LatLng(40.216534,-111.663006);
+     var crocsHell = new google.maps.LatLng(40.090663,-105.179715);
+     var springHell = new google.maps.LatLng(38.836237,-104.823201);
+     var wyomingHell = new google.maps.Latlng(42.851255,-106.383442);
+     var mapCanvas = document.getElementById("googleMap");
+     var mapOptions = {center: myCenter, zoom: 6};
+     var map = new google.maps.Map(mapCanvas, mapOptions);
+     var marker = new google.maps.Marker({position:myCenter});
+     var marker2 = new google.maps.Marker({position:greeleyHell});
+     var marker3 = new google.maps.Marker({position:utahHell});
+     var marker4= new google.maps.Marker({position:crocsHell});
+     var marker5= new google.maps.Marker({position:springHell});
+     var marker6= new google.maps.Marker({position:wyomingHell});
+     marker.setMap(map);
+     marker2.setMap(map);
+     marker3.setMap(map);
+     marker4.setMap(map);
+     marker5.setMap(map);
+     marker6.setMap(map);
+   }
+   </script>
+   <script src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyD2UZLrptxokNIgGpQKShGJHMXHdGMbuqQ&callback=myMap"
+   async defer></script>
+ </main>
+    <footer>
+      <p>
+        Learn more about these fantabulouse shoes <a href="https://en.wikipedia.org/wiki/Crocs">here</a>, or email me at bryce.bauer@scienceandtech.org for more information. 🐊
+      </p>
+   </footer>
+ </body>
